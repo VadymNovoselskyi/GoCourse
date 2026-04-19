@@ -1,4 +1,4 @@
-package main
+package profit_calc
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func calculateProfits() {
+func CalculateProfits() {
 	revenue, err := getPositiveInput("Enter revenue: ")
 	if err != nil {
 		fmt.Println("Invalid input for revenue:", err)

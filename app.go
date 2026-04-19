@@ -1,5 +1,7 @@
 package main
 
+import "github.com/VadymNovoselskyi/GoCourse/profit_calc"
+
 func main() {
-	calculateProfits()
+	profit_calc.CalculateProfits()
 }
