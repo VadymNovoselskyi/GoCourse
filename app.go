@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/VadymNovoselskyi/GoCourse/notes"
+	"github.com/VadymNovoselskyi/GoCourse/types"
 )
 
 func main() {
@@ -16,6 +17,7 @@ func main() {
 		fmt.Print("Invalid input for title: ", err)
 		return
 	}
+	types.PrintAnything(title)
 
 	content, err := getUserInput("Content: ")
 	if err != nil {
@@ -55,7 +57,6 @@ func getUserInput(prompt string) (string, error) {
 	}
 
 	return input, nil
-
 }
 
 // import "github.com/VadymNovoselskyi/GoCourse/profit_calc"
